@@ -149,23 +149,35 @@
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label text-primary fw-bold">Target Location</label>
-                            <select name="location" id="location" class="form-control">
-                                <option value="">Select Your Target Location</option>
-                                <option value="PAN India">PAN India</option>
-                                <option value="Maharashtra">Maharashtra</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Chennai">Chennai</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                                <option value="Bengaluru">Bengaluru</option>
-                                <option value="Kolkata">Kolkata</option>
+                            <label class="form-label text-primary fw-bold">Target Audience</label>
+                            <select name="audience" id="audience" class="form-control">
+                                <option value="">Select Your Target Audience</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Both">Both</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label text-primary fw-bold">Age Group</label>
+                            <select name="agegroup" id="agegroup" class="form-control">
+                                <option value="">Select Your Age Group</option>
+                                <option value="18 - 25">18 - 25</option>
+                                <option value="25 - 35">25 - 35</option>
+                                <option value="35 - 45">35 - 45</option>
+                                <option vlaue="45 - 55">45 - 55</option>
                             </select>
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label text-primary fw-bold">Tentative Budget <span class="text-danger"><strong>(Min. value should be 10000)</strong></span></label>
-                            <input type="number" class="form-control" name="budget" id="budget" placeholder="Please Enter your Tentative Budget" minlength="4">
-                            <span class="text-danger fw-bold" id="budget-error" style="display:none;">Budget cannot be less than 10000</span>
+                            <label class="form-label text-primary fw-bold">Tentative Budget (INR)</label>
+                            <select name="budget" id="budget" class="form-control">
+                                <option value="">Select Your Tentative Budget</option>
+                                <option value="10000">10,000</option>
+                                <option value="50000">50,000</option>
+                                <option value="75000">75,000</option>
+                                <option vlaue="Not Yet Decided">Not Yet Decided</option>
+                            </select>
                         </div>
 
                         <div class="mt-3">
@@ -522,7 +534,7 @@
 
         <header class="section-header">
 <!--          <h2>Features</h2>-->
-          <p>Any Specific Location You Would Like To Target</p>
+          <p>Please Select Your Target Audience</p>
         </header>
 
         <div class="row">
@@ -537,15 +549,24 @@
               <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check-circle"></i>
-                  <select name="location1" id="location1" class="form-control">
-                        <option value="">Select Your Target Location</option>
-                        <option value="PAN India">PAN India</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Chennai">Chennai</option>
-                        <option value="Hyderabad">Hyderabad</option>
-                        <option value="Bengaluru">Bengaluru</option>
-                        <option value="Kolkata">Kolkata</option>
+                  <select name="audience1" id="audience1" class="form-control">
+                        <option value="">Select Your Target Audiemce</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Both">Both</option>
+                    </select>
+                </div>
+              </div>
+                
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check-circle"></i>
+                  <select name="agegroup1" id="agegroup1" class="form-control">
+                        <option value="">Select Your Age Group</option>
+                        <option value="18 - 25">18 - 25</option>
+                        <option value="25 - 35">25 - 35</option>
+                        <option value="35 - 45">35 - 45</option>
+                        <option value="45 - 55">45 - 55</option>
                     </select>
                 </div>
               </div>
@@ -553,8 +574,13 @@
               <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check-circle"></i>
-                  <input type="number" class="form-control" name="budget1" id="budget1" placeholder="Please Enter your Tentative Budget" minlength="5">
-                  &nbsp;&nbsp;<p class="text-danger fw-bold" id="budget1-error" style="display:none;">Budget cannot be less than 10000</p>
+                  <select name="budget1" id="budget1" class="form-control">
+                        <option value="">Select Your Tentative Budget (INR)</option>
+                        <option value="10000">10,000</option>
+                        <option value="50000">50,000</option>
+                        <option value="75000">75,000</option>
+                        <option value="Not Yet Decided">Not Yet Decided</option>
+                    </select>
                 </div>
               </div>
 
@@ -642,28 +668,30 @@
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>A108 Adam Street,<br>New York, NY 535022</p>
+                  <p>904, Ellora Fiesta, Juinagar Railway Station (West), Navi Mumbai - 400705</p>
                 </div>
               </div>
+<!--
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                  <p><a href="tel:+919372553300">+91 9372553300</a></p>
                 </div>
               </div>
+-->
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <p><a href="mailto:info@enable.onl">info@enable.onl</a></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
-                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                  <p>Monday - Saturday<br>9:00AM - 09:00PM</p>
                 </div>
               </div>
             </div>
@@ -744,7 +772,7 @@
               <img src="assets/img/logo.png" alt="">
               <span>En:Able</span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>Enable is the platform that provides Tailored made marketing plans as per client’s budgets &amp; gives maximum exposure on various trending OTT platforms to get user ads featured on content that people watch regularly. </p>
             <div class="social-links mt-3">
               <a href="https://twitter.com/EnableOnl" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="https://www.facebook.com/EnableOnl" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -781,11 +809,9 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              904, Ellora Fiesta, Juinagar Railway Station (West), Navi Mumbai - 400705 <br><br>
+<!--              <strong>Phone:</strong> <a href="tel:+919372553300">+91 9372553300</a><br>-->
+              <strong>Email:</strong> <a href="mailto:info@enable.onl">info@enable.onl</a><br>
             </p>
 
           </div>
@@ -943,7 +969,7 @@ function firstform(){
                 $.ajax({
                     url: 'process.php',
                     type: 'POST',
-                    data: {uid:uid,emailid1:emailid1,contact1: contact1,firstform:"firstform"},
+                    data: {uid:uid,emailid1:emailid1,contact1:contact1,firstform:"firstform"},
                     beforeSend: function(){    
                       $("#firstsubmit").prop("disabled",true);
                       $("#firsthide").css({"display":"none"});    
@@ -1080,16 +1106,15 @@ function thirdform(){
   
 function fourthform(){
     var uid = $(".uid").val().trim();
-    var location1 = $("#location1").val().trim();
+    var audience1 = $("#audience1").val().trim();
+    var agegroup1 = $("#agegroup1").val().trim();
     var budget1 = $("#budget1").val().trim();
         
-    if(location1 !== "" && budget1 !== ""){
-            if(budget1 >= 10000){
-                $("#budget1-error").css({"display":"none"});
+    if(audience1 !== "" || agegroup1 !== "" || budget1 !== ""){
                 $.ajax({
                     url: "process.php",
                     type: "POST",
-                    data: {uid:uid,location1:location1,budget1:budget1,fourthform:"fourthform"},
+                    data: {uid:uid,audience1:audience1,agegroup1:agegroup1,budget1:budget1,fourthform:"fourthform"},
                     success: function(data){
                         if(data == "success"){
                             alert(data);
@@ -1098,12 +1123,8 @@ function fourthform(){
                                 scrollTop: $("#team").offset().top},
                             "slow");
                             $("#budget1").val("");
-                            $("#location1").val("");
-                        }
-                        else if(data == "budgetless"){
-                            alert(data);
-                            $("#budget1").focus();
-                            $("#budget1-error").css({"display":"inline"});
+                            $("#audience1").val("");
+                            $("#agegroup1").val("");
                         }
                         else{
                             alert(data);
@@ -1117,85 +1138,6 @@ function fourthform(){
                         }
                     }
                 });
-            }
-            else{
-                $("#budget1").focus();
-                $("#budget1-error").css({"display":"inline"});
-            }
-    }
-    if(location1 !== "" && budget1 == ""){
-                $.ajax({
-                    url: "process.php",
-                    type: "POST",
-                    data: {uid:uid,location1:location1,budget1:budget1,fourthform:"fourthform"},
-                    success: function(data){
-                        if(data == "success"){
-                            alert(data);
-                            $("#team").css({"display":"inline"});
-                            $("html, body").animate({
-                                scrollTop: $("#team").offset().top},
-                            "slow");
-                            $("#budget1").val("");
-                            $("#location1").val("");
-                        }
-                        else if(data == "budgetless"){
-                            alert(data);
-                            $("#budget1").focus();
-                            $("#budget1-error").css({"display":"inline"});
-                        }
-                        else{
-                            alert(data);
-                            $("html , body").animate({
-                                scrollTop: $("#about").offset().top},
-                            'slow');
-                            $("#emailid1").focus();
-                            $("#email1-error").css({"display":"inline"});
-                            $("#email1-error").text("Please Enter Valid Email ID");
-                            $('#contact1-error').css({"display":"inline"});
-                        }
-                    }
-                });
-    }
-    if(location1 == "" && budget1 !== ""){
-        if(budget1 >= 10000){
-                $("#budget1-error").css({"display":"none"});
-                $.ajax({
-                    url: "process.php",
-                    type: "POST",
-                    data: {uid:uid,location1:location1,budget1:budget1,fourthform:"fourthform"},
-                    success: function(data){
-                        if(data == "success"){
-                            alert(data);
-                            $("#team").css({"display":"inline"});
-                            $("html, body").animate({
-                                scrollTop: $("#team").offset().top},
-                            "slow");
-                            $("#budget1").val("");
-                            $("#location1").val("");
-                        }
-                        else if(data == "budgetless"){
-                            alert(data);
-                            $("#budget1").focus();
-                            $("#budget1-error").css({"display":"inline"});
-                        }
-                        else{
-                            alert(data);
-                            $("html , body").animate({
-                                scrollTop: $("#about").offset().top},
-                            'slow');
-                            $("#emailid1").focus();
-                            $("#email1-error").css({"display":"inline"});
-                            $("#email1-error").text("Please Enter Valid Email ID");
-                            $('#contact1-error').css({"display":"inline"});
-                        }
-                    }
-                });
-            }
-            else{
-                $("#budget1").focus();
-                $("#budget1-error").css({"display":"inline"});
-                return false;
-            }
     }
     return true;
 }
@@ -1206,7 +1148,8 @@ function verify(){
     var contact = $('#contact').val().trim();
     var activity = $('#activity').val().trim();
     var category = $('#category').val().trim();
-    var location = $('#location').val().trim();
+    var audience = $('#audience').val().trim();
+    var agegroup = $('#agegroup').val().trim();
     var budget = $('#budget').val().trim();
         
     if(emailid !== ""){
@@ -1219,13 +1162,11 @@ function verify(){
            $('#email-error').css({"display":"none"});
            if(contact !== "" && contact.length == 10){
                $('#contact-error').css({"display":"none"});
-               if(budget !== ""){
-                   if(budget >= 10000){
-                      $('#budget-error').css({"display":"none"});
                       $.ajax({
                         url: 'process.php',
                         type: 'POST',
-                        data: {uid:uid,emailid:emailid,contact:contact,activity:activity,category:category,location:location,budget:budget,
+                        data: {uid:uid,emailid:emailid,contact:contact,activity:activity,category:category,audience:audience,
+                               agegroup:agegroup,budget:budget,
                                    btnsubmit:"btnsubmit"},
                         beforeSend: function(){
                             $("#btnsubmit").text("Submitting...");
@@ -1249,39 +1190,6 @@ function verify(){
                             "slow");
                             }
                         });
-                   }
-                   else{
-                      $('#budget').focus();
-                      $('#budget-error').css({"display":"inline"});
-                   }
-               }
-               else{
-                   $.ajax({
-                        url: 'process.php',
-                        type: 'POST',
-                        data: {uid:uid,emailid:emailid,contact:contact,activity:activity,category:category,location:location,budget:budget,
-                                   btnsubmit:"btnsubmit"},
-                       beforeSend: function(){
-                            $("#btnsubmit").prop("disabled",true);
-                        },
-                        success:function(data){
-                            alert(data);
-                            $("#team").css({"display":"inline"});
-                            $("#btnsubmit").prop("disabled",false);
-                            $("#response").addClass("alert alert-success");
-                            $("#response").text(data);
-                            setTimeout(function(){
-                              $('#modal1').modal('hide')
-                            }, 500);
-                            $("#userform").trigger("reset");
-                            $("#response").removeClass("alert alert-success");
-                            $("#response").text("");
-                            $("html, body").animate({
-                                scrollTop: $("#team").offset().top},
-                            "slow");
-                        }
-                    });
-               }
            }
            else{
                $('#contact').focus();
