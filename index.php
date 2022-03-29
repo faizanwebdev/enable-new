@@ -318,7 +318,7 @@
               </div>
               <p id="contact1-error" class="text-danger fw-bold" style="display:none;">Please Enter Valid 10 Digit Contact Number</p>
               <p></p>
-              <div class="text-center text-lg-start">
+              <div class="text-center text-lg-start" id='firsthide'>
 <!--
                <button type="submit" id="firstsubmit" name="firstform"  class=" btn btn-read-more d-inline-flex align-items-center justify-content-center align-self-center" onclick="return firstform()"><span>Next</span>
                   <i class="bi bi-arrow-right"></i></button>
@@ -335,14 +335,16 @@
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
             <div class="clients-slider swiper">
               <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/ad/slide1.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide2.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide3.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide4.jpg" class="img-fluid" alt=""></div>
+<!--
                 <div class="swiper-slide"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+-->
               </div>
               <div class="swiper-pagination"></div>
               <!-- If we need navigation buttons -->
@@ -921,12 +923,14 @@ function firstform(){
                     type: 'POST',
                     data: {uid:uid,emailid1:emailid1,contact1: contact1,firstform:"firstform"},
                     beforeSend: function(){    
-                      $("#firstsubmit").prop("disabled",true);  
+                      $("#firstsubmit").prop("disabled",true);
+                      $("#firsthide").css({"display":"none"});    
                     },
                     success:function(data){
                         if(data == "success"){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
+                            $("#firsthide").css({"display":"inline"});
                             $("html , body").animate({
                                 scrollTop: $("#features").offset().top},
                             'slow');
@@ -936,6 +940,7 @@ function firstform(){
                         if(data == "validemail"){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
+                            $("#firsthide").css({"display":"inline"});
                             $("#emailid1").focus();
                             $("#email1-error").css({"display":"inline"});
                             $("#email1-error").text("Please Enter Valid Email ID");
@@ -943,6 +948,7 @@ function firstform(){
                         if(data == "officialemail"){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
+                            $("#firsthide").css({"display":"inline"});
                             $("#emailid1").focus();
                             $("#email1-error").css({"display":"inline"});
                             $("#email1-error").text("Please Enter Official Email ID");
@@ -950,12 +956,14 @@ function firstform(){
                         if(data == "validnumber"){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
+                            $("#firsthide").css({"display":"inline"});
                             $('#contact1').focus();
                             $('#contact1-error').css({"display":"inline"});
                         }
                         if(data == "mandatory"){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
+                            $("#firsthide").css({"display":"inline"});
                             $("#email1-error").css({"display":"inline"});
                             $("#email1-error").text("Please Enter Official Email ID");
                             $('#contact1-error').css({"display":"inline"});
@@ -963,6 +971,7 @@ function firstform(){
                         if(data == "fail"){
                             alert("Please Contact Website Admin via Contact Form or Email");
                             $("#firstsubmit").prop("disabled",false);
+                            $("#firsthide").css({"display":"inline"});
                         }
                     }
                 });
