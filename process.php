@@ -182,7 +182,7 @@ if(isset($_POST['firstform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                 $mail->SMTPSecure = 'tls';   
                 $mail->Port = 587;
                 $mail->setFrom('info@enable.online', 'ENABLE');
-    //            $mail->addAddress('info@anciapp.com', 'Admin');
+                $mail->addAddress($emailid1, 'User');
                 $mail->addBCC('faizan.kazi@enlyft.in', 'User'); 
 
                 $mail->isHTML(true);
@@ -271,7 +271,7 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                 $mail->SMTPSecure = 'tls';   
                 $mail->Port = 587;
                 $mail->setFrom('info@enable.online', 'ENABLE');
-    //            $mail->addAddress('info@anciapp.com', 'Admin');
+                $mail->addAddress($emailid, 'User');
                 $mail->addBCC('faizan.kazi@enlyft.in', 'User'); 
 
                 $mail->isHTML(true);
@@ -318,7 +318,7 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                 $mail->SMTPSecure = 'tls';   
                 $mail->Port = 587;
                 $mail->setFrom('info@enable.online', 'ENABLE');
-    //            $mail->addAddress('info@anciapp.com', 'Admin');
+                $mail->addAddress($emailid, 'User');
                 $mail->addBCC('faizan.kazi@enlyft.in', 'User'); 
 
                 $mail->isHTML(true);

@@ -21,6 +21,16 @@
     })(window,document,'script','dataLayer','GTM-NN244ZM');</script>
     <!-- End Google Tag Manager -->
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-224098572-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-224098572-1');
+    </script>
+    
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -786,7 +796,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <a href="index.php"><strong><span>En:Able</span></strong></a>  All Rights Reserved
+        &copy; Copyright 2022 <a target="_blank" href="https://enlyft.in/"><strong><span>ENLYFT NETWORKS PRIVATE LIMITED</span></strong></a> | All Rights Reserved
       </div>
 <!--
       <div class="credits">
