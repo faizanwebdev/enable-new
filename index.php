@@ -13,6 +13,13 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NN244ZM');</script>
+    <!-- End Google Tag Manager -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -30,6 +37,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN244ZM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 <?php $uid = uniqid('user-'); ?>
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -335,10 +346,10 @@
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
             <div class="clients-slider swiper">
               <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="assets/img/ad/slide1.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/ad/slide2.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/ad/slide3.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/ad/slide4.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide1-new.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide2-new.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide3-new.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide4-new.jpg" class="img-fluid" alt=""></div>
 <!--
                 <div class="swiper-slide"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
@@ -725,10 +736,11 @@
             </a>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/EnableOnl" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/EnableOnl" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/enableonl/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+<!--              <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>-->
+<!--              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
             </div>
           </div>
 
@@ -736,7 +748,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#" class="backtotop">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#values">Register</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">Register</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
 <!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>-->
 <!--              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
