@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>En:Able | Home</title>
+  <title>ENABLE | Home</title>
   <meta content="" name="description">
 
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/enable-favicon.jpeg" rel="icon">
+  <link href="assets/img/enable-favicon.jpeg"  rel="apple-touch-icon">
   <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -57,8 +57,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span>En:Able</span>
+        <img src="assets/img/enable-logo-png.png" alt="Enable Logo">
+<!--        <span>En:Able</span>-->
       </a>
 
       <nav id="navbar" class="navbar">
@@ -768,9 +768,9 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>En:Able</span>
+            <a href="index.php" class="logo d-flex align-items-center">
+              <img src="assets/img/enable-logo-png.png" alt="Enable Logo">
+<!--              <span>En:Able</span>-->
             </a>
             <p>Enable is the platform that provides Tailored made marketing plans as per client’s budgets &amp; gives maximum exposure on various trending OTT platforms to get user ads featured on content that people watch regularly. </p>
             <div class="social-links mt-3">
