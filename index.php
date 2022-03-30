@@ -101,7 +101,7 @@
   
   <!-- Modal -->
     <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-md">
+      <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header bg-primary text-white" style="border-bottom-color:transparent;">
            <h4 class="text-white mt-3">Need Tailored Media Plan For Your Ad?</h4>
@@ -146,7 +146,7 @@
                                 <option value="Healthcare">Healthcare</option>
                                 <option value="Real Estate">Real Estate</option>
                             </select>
-                        </div>
+                        </div> 
 
                         <div class="mb-3">
                             <label class="form-label text-primary fw-bold">Target Audience</label>

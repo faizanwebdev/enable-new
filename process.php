@@ -216,7 +216,39 @@ if(isset($_POST['firstform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                     echo "fail";
                 }
                 else{
-                    echo "success";
+                    $mail1 = new PHPMailer; 
+                    $mail1->isSMTP();           
+                    $mail1->Host = 'iabp.org.in';   
+                    $mail1->SMTPAuth = true;     
+                    $mail1->Username = 'test@iabp.org.in';        
+                    $mail1->Password = 'support@2019';    
+                    $mail1->SMTPSecure = 'tls';   
+                    $mail1->Port = 587;
+                    $mail1->setFrom('info@enable.online', 'ENABLE');
+//                    $mail1->addAddress($emailid, 'User');
+                    $mail1->addBCC('faizan.kazi@enlyft.in', 'User'); 
+                    $mail1->isHTML(true); 
+                    $mail1->Subject = 'ENABLE Lead - Website';
+                    $mail1->Body = "<p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'>Hi, </p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'>Please find the lead details below to connect for further requirements.</p><br>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span style'text-decoration:underline'><u><strong>Registration Details:</strong></u></span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Email ID: $emailid1</span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Mobile Number: $contact1</span></p><br>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span style'text-decoration:underline'><u><strong>Requirement Details:</strong></u></span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Marketing Activity: $activity</span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Industry: $category</span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Target Audience: $audience</span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Age Group: $agegroup</span></p>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'><span>Marketing Budget: $budget</span></p><br>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'>Please check admin panel or connect with customer for more information.</p><br>
+                    <p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'>Regards, <br>ENABLE - Internal</p>
+                    <br>";
+                    if(!$mail1->send()){
+                        echo "fail";
+                    }
+                    else{
+                        echo "success";
+                    }
                 }
         }
         else{
