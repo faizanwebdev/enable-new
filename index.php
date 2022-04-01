@@ -182,7 +182,8 @@
 
                         <div class="mt-3">
                            <span class="text-danger" id="allerror" style="display:none;">Please fill the * details properly</span>
-                           <center><button type="submit" name="btnsubmit" id="btnsubmit" class="btn btn-primary form-control" onclick="return verify();">Submit</button></center>
+                           <center><div class="spinner-border spin text-primary" style="display:none;"></div>
+                               <button type="submit" name="btnsubmit" id="btnsubmit" class="btn btn-primary form-control" onclick="return verify();">Submit</button></center>
                         </div>
                         <p id="response"></p>
 
@@ -351,6 +352,8 @@
               </div>
               <p id="contact1-error" class="text-danger fw-bold" style="display:none;">Please Enter Valid 10 Digit Contact Number</p>
               <p></p>
+                <div class="spinner-border spin1 text-primary" style="display:none;"></div>
+                <div class="spin1 text-primary text-bold" style="display:none;">Submitting...</div>
               <div class="text-center text-lg-start" id='firsthide'>
 <!--
                <button type="submit" id="firstsubmit" name="firstform"  class=" btn btn-read-more d-inline-flex align-items-center justify-content-center align-self-center" onclick="return firstform()"><span>Next</span>
@@ -726,7 +729,7 @@
 <!--                  <div class="loading">Loading</div>-->
 <!--                  <div class="errormessage"></div>-->
                   <div class="sentmessage text-success fw-bold" style="display:none;">Your message has been sent. Thank you!<br></div>
-
+                    
                   <button type="submit" name="btncontact" id="btncontact" onclick="return sendmail()"><span id="spin" class="spinner-border" style="display:none;"></span> Send Message</button>
                 </div>
 
@@ -972,13 +975,15 @@ function firstform(){
                     data: {uid:uid,emailid1:emailid1,contact1:contact1,firstform:"firstform"},
                     beforeSend: function(){    
                       $("#firstsubmit").prop("disabled",true);
-                      $("#firsthide").css({"display":"none"});    
+                      $("#firsthide").css({"display":"none"});
+                       $(".spin1").css({"display":"block"}); 
                     },
                     success:function(data){
                         if(data == "success"){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
                             $("#firsthide").css({"display":"inline"});
+                            $(".spin1").css({"display":"none"});
                             $("html , body").animate({
                                 scrollTop: $("#features").offset().top},
                             'slow');
@@ -989,6 +994,7 @@ function firstform(){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
                             $("#firsthide").css({"display":"inline"});
+                            $(".spin1").css({"display":"none"});
                             $("#emailid1").focus();
                             $("#email1-error").css({"display":"inline"});
                             $("#email1-error").text("Please Enter Valid Email ID");
@@ -997,6 +1003,7 @@ function firstform(){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
                             $("#firsthide").css({"display":"inline"});
+                            $(".spin1").css({"display":"none"});
                             $("#emailid1").focus();
                             $("#email1-error").css({"display":"inline"});
                             $("#email1-error").text("Please Enter Official Email ID");
@@ -1005,6 +1012,7 @@ function firstform(){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
                             $("#firsthide").css({"display":"inline"});
+                            $(".spin1").css({"display":"none"});
                             $('#contact1').focus();
                             $('#contact1-error').css({"display":"inline"});
                         }
@@ -1012,6 +1020,7 @@ function firstform(){
                             alert(data);
                             $("#firstsubmit").prop("disabled",false);
                             $("#firsthide").css({"display":"inline"});
+                            $(".spin1").css({"display":"none"});
                             $("#email1-error").css({"display":"inline"});
                             $("#email1-error").text("Please Enter Official Email ID");
                             $('#contact1-error').css({"display":"inline"});
@@ -1020,6 +1029,7 @@ function firstform(){
                             alert("Please Contact Website Admin via Contact Form or Email");
                             $("#firstsubmit").prop("disabled",false);
                             $("#firsthide").css({"display":"inline"});
+                            $(".spin1").css({"display":"none"});
                         }
                     }
                 });
@@ -1171,12 +1181,14 @@ function verify(){
                         beforeSend: function(){
                             $("#btnsubmit").text("Submitting...");
                             $("#btnsubmit").prop("disabled",true);
+                            $(".spin").css({"display":"block"});
                         },
                         success:function(data){
                             alert(data);
                             $("#team").css({"display":"inline"});
                             $("#btnsubmit").text("Submit");
                             $("#btnsubmit").prop("disabled",false);
+                            $(".spin").css({"display":"none"});
                             $("#response").addClass("alert alert-success");
                             $("#response").text(data);
                             setTimeout(function(){
