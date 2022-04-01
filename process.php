@@ -5,6 +5,40 @@ include "config.php";
 date_default_timezone_set("Asia/Calcutta");
 $date = date("Y-m-d");
 $datetime = date('Y-m-d H:i:s');
+define("encryption_method", "AES-128-CBC");
+define("key", "enable@2022#$%");
+define("iv", "enable@2022#$%^&");
+function encrypt($data) {
+    $key = key;
+    $plaintext = $data;
+    $ivlen = openssl_cipher_iv_length($cipher = encryption_method);
+    $iv = iv;
+    $ciphertext_raw = openssl_encrypt($plaintext, $cipher, $key, $options = OPENSSL_RAW_DATA, $iv);
+    $hmac = hash_hmac('sha256', $ciphertext_raw, $key, $as_binary = true);
+    $ciphertext = base64_encode($iv . $hmac . $ciphertext_raw);
+    return $ciphertext;
+}
+function decrypt($data) {
+    $key = key;
+    $c = base64_decode($data);
+    $ivlen = openssl_cipher_iv_length($cipher = encryption_method);
+    $iv = iv;
+    $hmac = substr($c, $ivlen, $sha2len = 32);
+    $ciphertext_raw = substr($c, $ivlen + $sha2len);
+    $original_plaintext = openssl_decrypt($ciphertext_raw, $cipher, $key, $options = OPENSSL_RAW_DATA, $iv);
+    $calcmac = hash_hmac('sha256', $ciphertext_raw, $key, $as_binary = true);
+    if (hash_equals($hmac, $calcmac))
+    {
+        return $original_plaintext;
+    }
+}
+function cleanup( $data ) {
+    global $con;
+    $data = trim( $data );
+    $data = htmlspecialchars( $data );
+    $data = mysqli_real_escape_string($con, $data);
+    return $data;
+}
 
 if(isset($_POST['fourthform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
     $uid = cleanup($_POST['uid']);
@@ -177,9 +211,13 @@ if(isset($_POST['firstform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
             echo "validnumber";
             die();
         }
+        $emailid1 = encrypt($emailid1);
+        $contact1 = encrypt($contact1);
         $insert = "INSERT INTO `userdata`(`userid`, `email`, `contact`, `activity`, `industry`, `audience`, `agegroup`, `budget`, `date`, `submitted`, `complete`,`mode`) VALUES ('$uid','$emailid1','$contact1','$activity','$category','$audience','$agegroup','$budget','$date',
         '$datetime','$complete','$mode')";
         $result = mysqli_query($con, $insert);
+        $emailid1 = decrypt($emailid1);
+        $contact1 = decrypt($contact1);
         if($result){
 //            echo "success";
                 require_once 'PHPMailer-master/PHPMailerAutoload.php';
@@ -304,8 +342,12 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
         if(empty($budget)){
             $budget = "NA";
         }
+        $emailid = encrypt($emailid);
+        $contact = encrypt($contact);
             $insert = "INSERT INTO `userdata`(`userid`, `email`, `contact`, `activity`, `industry`, `audience`, `agegroup`, `budget`, `date`, `submitted`, `complete`,`mode`) VALUES ('$uid','$emailid','$contact','$activity','$category','$audience','$agegroup','$budget','$date','$datetime','$complete','$mode')";
             $result = mysqli_query($con, $insert);
+            $emailid = decrypt($emailid);
+            $contact = decrypt($contact);
             if($result){
                 require_once 'PHPMailer-master/PHPMailerAutoload.php';
                 $mail = new PHPMailer; 
@@ -319,7 +361,6 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                 $mail->setFrom('info@enable.online', 'ENABLE');
                 $mail->addAddress($emailid, 'User');
                 $mail->addBCC('faizan.kazi@enlyft.in', 'User'); 
-
                 $mail->isHTML(true);
                 $mail->Subject = 'Welcome To ENABLE';
                 $mail->Body    = "<p style='font-family:Arial, Helvetica, san-serif; font-size:12px;'>Hi,</p>
@@ -385,11 +426,4 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
     }
 }
 
-function cleanup( $data ) {
-    global $con;
-    $data = trim( $data );
-    $data = htmlspecialchars( $data );
-    $data = mysqli_real_escape_string($con, $data);
-    return $data;
-}
 ?>
