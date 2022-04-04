@@ -25,10 +25,10 @@ if(isset($_POST['btncontact']) && $_SERVER['REQUEST_METHOD'] == "POST"){
             require_once 'PHPMailer-master/PHPMailerAutoload.php';
             $mail = new PHPMailer; 
             $mail->isSMTP();           
-            $mail->Host = 'iabp.org.in';   
+            $mail->Host = 'smtp.gmail.com';   
             $mail->SMTPAuth = true;     
-            $mail->Username = 'test@iabp.org.in';        
-            $mail->Password = 'support@2019';    
+            $mail->Username = 'enable.onl@gmail.com';        
+            $mail->Password = '';    
             $mail->SMTPSecure = 'tls';   
             $mail->Port = 587;
             $mail->setFrom('info@enable.online', 'ENABLE');
