@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>ENABLE | Home</title>
-  <meta content="" name="description">
+  <meta content="Enable is the platform that provides Tailored made marketing plans as per client’s budgets & gives maximum exposure on various trending OTT platforms to get user ads featured on content that people watch regularly." name="description">
 
   <meta content="" name="keywords">
 
@@ -205,7 +205,7 @@
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Grow your business with 350+ Million Audience</h1>
 <!--          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with Bootstrap</h2>-->
-          <div data-aos="fade-up" data-aos-delay="200">
+          <div data-aos="fade-up" data-aos-delay="50">
             <div class="text-center text-lg-start">
               <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Register Now</span>
@@ -214,8 +214,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="50">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="enable">
         </div>
       </div>
     </div>
@@ -236,17 +236,17 @@
 
         <div class="row">
 
-          <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="50">
             <div class="box">
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="enable">
               <h2 style="color:#012970;"><strong>Get Noticed Right on the FRONT</strong></h2>
 <!--              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>-->
             </div>
           </div>
 
-          <div class="col-lg-8 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-8 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="50">
             <div class="box">
-              <img src="assets/img/mid-image.JPG" class="img-fluid" alt="">
+              <img src="assets/img/mid-image.JPG" class="img-fluid" alt="enable">
 <!--              <h3>Voluptatem voluptatum alias</h3>-->
 <!--              <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>-->
             </div>
@@ -328,7 +328,7 @@
       <div class="container" data-aos="fade-up">
         <div class="row gx-0">
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="content">
               <h1 style="color:#012970;"><strong>Check Your Free Display Ad here...</strong></h1>
               <br>
@@ -368,13 +368,13 @@
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="clients-slider swiper">
               <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="assets/img/ad/slide1-new.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/ad/slide2-new.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/ad/slide3-new.jpg" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/ad/slide4-new.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide1-new.jpg" class="img-fluid" alt="enable"></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide2-new.jpg" class="img-fluid" alt="enable"></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide3-new.jpg" class="img-fluid" alt="enable"></div>
+                <div class="swiper-slide"><img src="assets/img/ad/slide4-new.jpg" class="img-fluid" alt="enable"></div>
 <!--
                 <div class="swiper-slide"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
@@ -408,7 +408,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
+            <img src="assets/img/features.png" class="img-fluid" alt="enable">
           </div>
 
           <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
@@ -436,7 +436,7 @@
               </div>
 -->
 
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="100">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-arrow-right-square"></i>
                   <a href="#faq" id="secondsubmit" onclick="return secondform()" class="btn btn-primary" style="background-color:#4154f1 !important"> Next </a>
@@ -492,7 +492,7 @@
           <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
             <div class="row align-self-center gy-4">
 
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="50">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check-circle"></i>
                   <select name="category1" id="category1" class="form-control">
@@ -506,7 +506,7 @@
               </div>
 
 
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="50">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-arrow-right-square"></i>
 <!--                  <a href="" class="btn btn-primary" style="background-color:#4154f1 !important"> Previous </a>-->
@@ -519,7 +519,7 @@
           </div>
           
           <div class="col-lg-6">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
+            <img src="assets/img/features.png" class="img-fluid" alt="enable">
           </div>
 
         </div> <!-- / row -->
@@ -549,7 +549,7 @@
           <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
             <div class="row align-self-center gy-4">
 
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="50">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check-circle"></i>
                   <select name="audience1" id="audience1" class="form-control">
@@ -561,7 +561,7 @@
                 </div>
               </div>
                 
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="50">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check-circle"></i>
                   <select name="agegroup1" id="agegroup1" class="form-control">
@@ -574,7 +574,7 @@
                 </div>
               </div>
               
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="50">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check-circle"></i>
                   <select name="budget1" id="budget1" class="form-control">
@@ -588,7 +588,7 @@
               </div>
 
 
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="400">
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="50">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-arrow-right-square"></i>
 <!--                  <a href="" class="btn btn-primary" style="background-color:#4154f1 !important"> Previous </a>-->
@@ -627,10 +627,10 @@
 <!--            </div>-->
 <!--          </div>-->
 
-          <div class="col-lg-12 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
              <h3 style="color:#012970;"><strong>Thank You for sharing the requirement<br><br> Our <span class="text-danger">Team Expert</span> will connect with a <span class="text-danger">Tailored</span> media plan</strong></h3>
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="enable">
 <!--              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>-->
             </div>
           </div>
