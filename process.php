@@ -83,7 +83,7 @@ if(isset($_POST['fourthform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                                     $mail1->Host = 'smtp.gmail.com';   
                                     $mail1->SMTPAuth = true;     
                                     $mail1->Username = 'enable.onl@gmail.com';        
-                                    $mail1->Password = 'Enable@22';    
+                                    $mail1->Password = '';    
                                     $mail1->SMTPSecure = 'tls';   
                                     $mail1->Port = 587;
                                     $mail1->setFrom('info@enable.onl', 'ENABLE');
@@ -226,7 +226,7 @@ if(isset($_POST['firstform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                 $mail->Host = 'smtp.gmail.com';   
                 $mail->SMTPAuth = true;     
                 $mail->Username = 'enable.onl@gmail.com';        
-                $mail->Password = 'Enable@22';    
+                $mail->Password = '';    
                 $mail->SMTPSecure = 'tls';   
                 $mail->Port = 587;
                 $mail->setFrom('info@enable.onl', 'ENABLE');
@@ -259,7 +259,7 @@ if(isset($_POST['firstform']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                     $mail1->Host = 'smtp.gmail.com';   
                     $mail1->SMTPAuth = true;     
                     $mail1->Username = 'enable.onl@gmail.com';        
-                    $mail1->Password = 'Enable@22';    
+                    $mail1->Password = '';    
                     $mail1->SMTPSecure = 'tls';   
                     $mail1->Port = 587;
                     $mail1->setFrom('info@enable.onl', 'ENABLE');
@@ -355,7 +355,7 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                 $mail->Host = 'smtp.gmail.com';   
                 $mail->SMTPAuth = true;     
                 $mail->Username = 'enable.onl@gmail.com';        
-                $mail->Password = 'Enable@22';    
+                $mail->Password = '';    
                 $mail->SMTPSecure = 'tls';    
                 $mail->Port = 587;
                 $mail->setFrom('info@enable.onl', 'ENABLE');
@@ -387,7 +387,7 @@ if(isset($_POST['btnsubmit']) && $_SERVER['REQUEST_METHOD'] == "POST"){
                     $mail1->Host = 'smtp.gmail.com';   
                     $mail1->SMTPAuth = true;     
                     $mail1->Username = 'enable.onl@gmail.com';        
-                    $mail1->Password = 'Enable@22';    
+                    $mail1->Password = '';    
                     $mail1->SMTPSecure = 'tls';   
                     $mail1->Port = 587;
                     $mail1->setFrom('info@enable.onl', 'ENABLE');
